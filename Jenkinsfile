@@ -16,7 +16,13 @@ node {
         def result = calculator(10,5)
         println "Result: ${result}"
         echo "Result: ${result}"
-        
+    }
+    
+    stage ("get aws user") {
+        def user = awsTest()
+        println "userId: ${userId}"
+        println "account: ${account}"
+        println "Arn: ${arn}"
     }
 
 }
