@@ -13,7 +13,10 @@ node {
     } 
     
     stage("Calling Calculator function...") {
-        calculator(10,5)
+        def result = calculator(10,5)
+        println "Result: ${result}"
+        echo "Result: ${result}"
+        
     }
 
 }
