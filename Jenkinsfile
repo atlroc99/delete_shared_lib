@@ -10,6 +10,10 @@ node {
 
     stage ("calling shared lib part 3") {
         welcome("this is part 3")
-    }   
+    } 
+    
+    stage("Calling Calculator function...") {
+        calculator(10,5)
+    }
 
 }
